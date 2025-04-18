@@ -1,4 +1,4 @@
-# Multimodel Decision Fusion for Detection of Advanced Persistent Threats in Industrial Control Systems
+# Multimodal Decision Fusion for Detection of Advanced Persistent Threats in Industrial Control Systems
 
 ---
 # Overview
