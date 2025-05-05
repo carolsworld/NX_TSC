@@ -3,7 +3,7 @@
 ---
 # Overview
 
-This repository explores whether combining network, host and process indicators enhances detection of stealthy multi-step APT behaviors in industrial cyber-physical systems. 
+This repository explores whether combining network, host and process indicators enhances detection of stealthy multi-step APT behaviors (especially Living off the Land techniques) in Cyber-Physical Systems and related Industrial Control Systems. 
 
 The first goal of this simulation setup for OT process was to:
 - **Detect physical process anomalies** using LSTM-FCN classifiers on time series data.
@@ -11,9 +11,11 @@ The first goal of this simulation setup for OT process was to:
 - Ultimately, evaluate whether **fusing both sources of detection** improves detection performance — especially for **unseen, stealthy multi-vector attacks**.
 
 The second goal of the simulation setup for IT process was to: 
-... to be updated.
+- **Detect host-level anomalies** based on Wazuh SIEM logs from a Windows 11 VM under PowerShell-based attack simulation.
+- **Score host behaviours per minute** using binary rule-based features derived from MITRE ATT&CK-relevant detections.
+- Correlate host anomaly scores with OT behavior to support fusion-based decision making.
 
-Ultimately, the project leverages data fusion between **OT process data**, **OT network traffic**, **IT host log**, **IT network traffic** to improve detection accuracy and generalization, aiming to detect multi-step stealthy Living off the land (LOTL) technqiues.
+Ultimately, the project leverages data fusion between **OT process data**, **OT network traffic**, and **IT host event log within the OT environment** to improve detection accuracy and generalization, aiming to detect multi-step stealthy Living off the land (LOTL) technqiues.
 
 ---
 
@@ -24,18 +26,16 @@ The goal is to evaluate whether **multi-modal data fusion** of host, network, an
 - Process-level anomaly detection (e.g. abnormal conveyor/gripper behavior)
 - OPC UA network anomaly detection (e.g. unauthorized write commands)
 - Host-based behavior analysis (e.g. PowerShell, living-off-the-land tools)
-- TCP/IP network correlation (IT network logs)
 
 ---
 
 # Core Components of Digital Twin Simulation
 
-| Modality      | Source                    | Detection Method                     | Nature | 
-|---------------|---------------------------|--------------------------------------|--------|
-| OT Process    | Siemens NX MCD            | LSTM-FCN (Time Series Classifier)    |    OT  |
-| OT Network    | Wireshark + Zeek (OPC UA) | Isolation Forest (Unsupervised)      |    OT  |
-| IT Network    | TCP/PCAP (Zeek)           | In progress                          |    IT  |
-| IT Host Logs  | Windows 10 (Wazuh/ELK)    | In progress                          |    IT  |
+| Modality   | Source                    | Detection Method                     | Nature | 
+|------------|---------------------------|--------------------------------------|--------|
+| Process    | Siemens NX MCD            | LSTM-FCN (Time Series Classifier)    |    OT  |
+| Network    | Wireshark + Zeek (OPC UA) | Isolation Forest (Unsupervised)      |    OT  |
+| Host Logs  | Windows 11 (Wazuh,sysmon) | Binary Rule-based Feature Scoring    |    IT  |
 
 ---
 
