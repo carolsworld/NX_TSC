@@ -76,22 +76,24 @@ Two parallel datasets were created — one for time-series classification based 
 
 ## IT Side
 
-### IT Network Traffic
-
 ### IT Host Logs
-- TCP/IP correlation from Zeek + Wazuh + Sysmon logs
-- Host-based anomaly detection from PowerShell + process audit logs  
-
+- Logs collected from Windows 11 with Wazuh and Sysmon, including PowerShell, command line, and event-based indicators.
+- Binary rule-based scoring assigns 1 point to key anomaly features per minute (e.g., suspicious logon, high-severity rule matches).
+- Anomaly scores are aggregated per minute, and enriched with explanation text.
+- Visual correlation with attack windows shows effective scoring and detection during simulated PowerShell-based LOTL attacks.
 
 ## Visualisation
-- Grafana dashboards is to be used for visualization of fused result
+- Grafana dashboards is to be used for visualization of fused results across modalities
 
 ---
 
-## Key Findings (so far)
+## Key Findings
 
 - Fusion of OT process + network achieves **higher F1-score** and better generalization than either modality alone.
-- Fusion improves detection of **unseen multi-vector APT scenarios**.
-- Real-time detection pipelines can be built using `.pkl` model files, Zeek logs, and SCADA process simulators.
+- Host-based anomaly scoring using Wazuh rules effectively highlights LOTL-related behavior.
+- Attack windows are clearly identifiable through score peaks aligned with the simulated APT timeline.
+
+## Future work
+- Future integration of LLMs is planned to support natural language interpretation of fused anomaly explanations.
 
 ---
