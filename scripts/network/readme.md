@@ -1,28 +1,59 @@
-How the 60 instances OT network data in pcapng are converted to csv for model training?
+## How the 60 Instance OT Network Data (PCAPNG) Are Processed for Model Training
 
-During model development, there are 60 separate PCAP files (one per simulation instance), and their durations were often longer than 60 seconds. To standardize the dataset, we sliced each instance to exactly 1 minute, typically the last minute, assuming that was most representative of stable behavior. This gave you a uniform structure to extract features and train the model (one row per instance).
+During model development, 60 separate network capture files (one per simulation instance) were collected in `.pcapng` format. Each file often contained more than 60 seconds of traffic. To ensure consistency across samples, each instance was sliced to exactly **1 minute**, typically using the **last 60 seconds** of the capture. This created a uniform structure for extracting OPC UA network features and training the model.
 
-Steps
-1. extractZeekLogsEnhanced.sh: from pcapng to zeek log for 60 instances
-   
-3. extractlogtoCSV.py: from zeek log to CSV for 60 instances
-   
-5. extract_1minute.py: standardise the CSV record based on 1-minute interval for 60 instances
-   
-7. extract opcua_features: prepare features for model development 
+1. **`extractZeekLogsEnhanced.sh`**  
+   Converts each `.pcapng` file to **Zeek log format** using the Zeek parser with OPC UA plugins.
+
+2. **`extractlogtoCSV.py`**  
+   Converts Zeek `.log` files to structured **CSV format** (e.g., `opcua.csv`) for each instance.
+
+3. **`extract_1minute.py`**  
+   Standardizes each CSV file by slicing it to a fixed **1-minute interval**, typically selecting the last valid minute of traffic.
+
+4. **`extract_opcua_features.py`**  
+   Extracts semantic features used for model development.
+
+### OPC UA Network Data Summary (not all the features below are used)
+
+| Feature Name            | Description |
+|-------------------------|-------------|
+| `is_orig`               | Binary flag for message direction: `1` = client initiated (e.g., HMI or UAExpert), `0` = server response |
+| `is_final`              | Binary flag for message completeness: `1` = complete OPC UA message, `0` = incomplete |
+| `identifier`            | Numeric identifier of the OPC UA message type (e.g., `673` = WriteRequest) |
+| `is_WriteOps`           | Binary flag: `1` if message is a write request (`identifier == 673`), otherwise `0` |
+| `msg_size`              | Size (in bytes) of the OPC UA message |
+| `write_msg_anomaly`     | Flags write requests with **uncommon message sizes** (i.e., size ≠ most common value) |
+| `id.orig_p`             | Source port used by the client. Can help differentiate HMI vs. PLC or automated traffic |
+
 
 === 
 
-How the multi-stage OT network data in pcapng are converted to csv for prediction?
+## How the Multi-Stage OT Network Data (PCAPNG) Are Processed for Prediction
 
-There is one large capture file with data covering ~5 hours. This time, we don’t need to pre-slice it using the script. Instead, we can do the 1-minute segmentation directly in the Jupyter Notebook, e.g., using groupby(pd.Grouper(freq='1min')) or defining your own custom slices for more flexible analysis. This approach provides flexibility — e.g., zoom in on just Step 3 (09:45–10:15) or Step 5 (13:00–13:30).
+During multi-stage simulation, network traffic was captured continuously in a **single `.pcapng` file** over ~5 hours. Instead of pre-slicing each instance manually, we used **timestamp-based segmentation** dynamically within the Jupyter notebook. This allowed flexible zoom-in on specific attack phases — e.g., zoom in on just Step 3 (09:45–10:15) or Step 5 (13:00–13:30).
 
-Steps
 
-1. Run command "zeek .... -C -r ... " on terminal: from pcapng to zeek log for single pcapng
+### Processing Steps
+
+1. **Run Zeek command  on terminal**  
+   Converts the full `.pcapng` file into Zeek logs:  
    
-3. extractlogtoCSV_single.py: from zeek log to CSV
+   **zeek -C -r yourfile.pcapng**
+
+2. **`extractlogtoCSV_single.py`**  
+   Converts the opcua.log file into a structured CSV file.
+
+3. **`timestamp_toLocalTime.py`**  
+   Converts Zeek timestamps from UTC to UK local time, aligning network events with process logs and attack chain timelines.
+
+4. **`extract_opcua_features_single.py`**  
+   Performs feature extraction on the full network log, including identifying write requests and their message sizes and flagging anomalous message sizes or patterns. 
+
+   Extracts semantic features including:
    
-5. timestamp_toLocalTime.py: from UTC time to local time (UK)
-   
-3. extract_opcua_features_single.py: prepare features for data pre-processing and model prediction
+• is_orig – whether the message was client-initiated
+
+• is_WriteOps – whether the message is a write operation
+
+• write_msg_anomaly – whether the write message has an unexpected size
