@@ -1,0 +1,18 @@
+"eventtime","source","priority","eventtype","eventflags","floatvalue"
+"2025-05-09 15:59:13.891","prov:default:/tag:Conveyor2_Speed:/alm:High Speed Alarm - Conveyor 2",1,0,0,"432"
+"2025-05-09 15:59:17.933","prov:default:/tag:Conveyor2_Speed:/alm:High Speed Alarm - Conveyor 2",1,1,16,"50"
+"2025-05-09 15:59:30.055","prov:default:/tag:Conveyor2_Speed:/alm:High Speed Alarm - Conveyor 2",1,0,0,"489"
+"2025-05-09 15:59:39.635","prov:default:/tag:Conveyor2_Speed:/alm:High Speed Alarm - Conveyor 2",1,2,0,NULL
+"2025-05-09 15:59:50.457","prov:default:/tag:Conveyor2_Speed:/alm:High Speed Alarm - Conveyor 2",1,1,24,"50"
+"2025-05-09 16:00:43.678","prov:default:/tag:Conveyor3_Speed:/alm:High Speed Alarm - Conveyor 3",1,0,0,"500"
+"2025-05-09 16:00:49.811","prov:default:/tag:Conveyor3_Speed:/alm:High Speed Alarm - Conveyor 3",1,1,16,"50"
+"2025-05-09 16:00:51.503","prov:default:/tag:Conveyor3_Speed:/alm:High Speed Alarm - Conveyor 3",1,2,16,NULL
+"2025-05-09 16:01:00.032","prov:default:/tag:Conveyor3_Speed:/alm:High Speed Alarm - Conveyor 3",1,0,0,"471"
+"2025-05-09 16:01:11.112","prov:default:/tag:Conveyor3_Speed:/alm:High Speed Alarm - Conveyor 3",1,2,0,NULL
+"2025-05-09 16:01:23.46","prov:default:/tag:Conveyor3_Speed:/alm:High Speed Alarm - Conveyor 3",1,1,24,"50"
+"2025-05-09 16:53:51.63","prov:default:/tag:Conveyor2_Speed:/alm:High Speed Alarm - Conveyor 2",1,0,0,"400000"
+"2025-05-09 16:54:05.826","prov:default:/tag:Conveyor2_Speed:/alm:High Speed Alarm - Conveyor 2",1,1,16,"50"
+"2025-05-09 16:54:29.108","prov:default:/tag:Conveyor3_Speed:/alm:High Speed Alarm - Conveyor 3",1,0,0,"40000"
+"2025-05-09 16:54:53.4","prov:default:/tag:Conveyor3_Speed:/alm:High Speed Alarm - Conveyor 3",1,1,16,"50"
+"2025-05-09 16:57:09.723","prov:default:/tag:Conveyor3_Speed:/alm:High Speed Alarm - Conveyor 3",1,0,0,"40000"
+"2025-05-09 16:57:45.518","prov:default:/tag:Conveyor3_Speed:/alm:High Speed Alarm - Conveyor 3",1,1,16,"50"
