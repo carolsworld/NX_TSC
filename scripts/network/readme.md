@@ -5,14 +5,14 @@ During model development, 60 separate network capture files (one per simulation 
 1. **`extractZeekLogsEnhanced.sh`**  
    Converts each `.pcapng` file to **Zeek log format** using the Zeek parser with OPC UA plugins.
 
-2. **`extractlogtoCSV.py`**  
-   Converts Zeek `.log` files to structured **CSV format** (e.g., `opcua.csv`) for each instance.
+2. **`extractlogtoCSV_enriched.py`**  
+   Converts Zeek `.log` files to structured **CSV format** for each instance. Information from opcua_binary.log are perserved, with added "node_id_string" from opcua_binary_write.log.
 
-3. **`extract_1minute.py`**  
-   Standardizes each CSV file by slicing it to a fixed **1-minute interval**, typically selecting the last valid minute of traffic.
-
-4. **`extract_opcua_features.py`**  
-   Extracts semantic features used for model development.
+3. **`extract_opcua_features_enriched.py`**  
+   Extracts semantic features and combine the 60 files into 1 CSV file for model development.
+   
+4. **`extract_1minute.py`**  
+   Slice the instance to a fixed **1-minute interval**, typically selecting the last valid minute of traffic.
 
 ### OPC UA Network Data Summary (not all the features below are used)
 
@@ -25,7 +25,7 @@ During model development, 60 separate network capture files (one per simulation 
 | `msg_size`              | Size (in bytes) of the OPC UA message |
 | `write_msg_anomaly`     | Flags write requests with **uncommon message sizes** (i.e., size ≠ most common value) |
 | `id.orig_p`             | Source port used by the client. Can help differentiate HMI vs. PLC or automated traffic |
-
+| `node_id_string`        | Semantic flag gives information about which node_id has write request |
 
 === 
 
@@ -37,17 +37,17 @@ During multi-stage simulation, network traffic was captured continuously in a **
 ### Processing Steps
 
 1. **Run Zeek command  on terminal**  
-   Converts the full `.pcapng` file into Zeek logs:  
+   Converts the full `.pcapng` file into Zeek logs with the following commands:  
    
-   **zeek -C -r yourfile.pcapng**
+   **zeek -C -r theOPCUANetworkTraffic.pcapng icsnpp/opcua-binary**
 
-2. **`extractlogtoCSV_single.py`**  
-   Converts the opcua.log file into a structured CSV file.
+2. **`extractlogtoCSV_enriched_single.py`**  
+   Converts the opcua.log file into a structured CSV file. Information from opcua_binary.log are perserved, with added "node_id_string" from opcua_binary_write.log.
 
 3. **`timestamp_toLocalTime.py`**  
    Converts Zeek timestamps from UTC to UK local time, aligning network events with process logs and attack chain timelines.
 
-4. **`extract_opcua_features_single.py`**  
+4. **`extract_opcua_features_enriched_single.py`**  
    Performs feature extraction on the full network log, including identifying write requests and their message sizes and flagging anomalous message sizes or patterns. 
 
    Extracts semantic features including:
@@ -57,3 +57,5 @@ During multi-stage simulation, network traffic was captured continuously in a **
 • is_WriteOps – whether the message is a write operation
 
 • write_msg_anomaly – whether the write message has an unexpected size
+
+
