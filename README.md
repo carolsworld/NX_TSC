@@ -85,6 +85,8 @@ Two parallel datasets were created — one for time-series classification based 
 ## Visualisation
 - Grafana dashboards is to be used for visualization of fused results across modalities
 
+## LLM Support for Analysis
+- Gemini 2.0 (LLM) is used to support natural language interpretation of fused anomaly explanations.
 ---
 
 ## Key Findings
@@ -93,7 +95,5 @@ Two parallel datasets were created — one for time-series classification based 
 - Host-based anomaly scoring using Wazuh rules effectively highlights LOTL-related behavior.
 - Attack windows are clearly identifiable through score peaks aligned with the simulated APT timeline.
 
-## Future work
-- Future integration of LLMs is planned to support natural language interpretation of fused anomaly explanations.
 
 ---
