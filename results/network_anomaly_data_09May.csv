@@ -1,0 +1,45 @@
+timestamp,instance,node_ids_written,source_ports,message_sizes,explanation,anomaly_score,timestamp_bst
+09/05/2025 13:38,4,-,"53373, 53218","253, 100, 204, 189, 1584",Unusual OPC UA write pattern detected,-0.087743584,2025-05-09 14:38:00+01:00
+09/05/2025 13:39,5,-,"53373, 53218","253, 100, 204, 189, 255",Unusual OPC UA write pattern detected,-0.139127899,2025-05-09 14:39:00+01:00
+09/05/2025 13:40,6,-,"53373, 53218","253, 100, 204, 189, 1558",Unusual OPC UA write pattern detected,-0.139127899,2025-05-09 14:40:00+01:00
+09/05/2025 13:55,21,-,"53373, 53218","253, 100, 204, 189, 1584",Unusual OPC UA write pattern detected,-0.084002281,2025-05-09 14:55:00+01:00
+09/05/2025 13:56,22,-,"53373, 53218","253, 100, 204, 189, 1558",Unusual OPC UA write pattern detected,-0.139127899,2025-05-09 14:56:00+01:00
+09/05/2025 13:57,23,-,"53373, 53218","253, 100, 204, 189, 1558",Unusual OPC UA write pattern detected,-0.008339222,2025-05-09 14:57:00+01:00
+09/05/2025 14:04,30,-,"53373, 53218","253, 100, 204, 189, 96",Unusual OPC UA write pattern detected,-0.000419435,2025-05-09 15:04:00+01:00
+09/05/2025 14:05,31,-,"53373, 53218","96, 74, 1582, 66, 414",Unusual OPC UA write pattern detected,-0.139127899,2025-05-09 15:05:00+01:00
+09/05/2025 14:10,36,-,"53373, 53218","253, 100, 204, 189, 1682",Unusual OPC UA write pattern detected,-0.000419435,2025-05-09 15:10:00+01:00
+09/05/2025 14:12,38,-,"53373, 53218","253, 100, 204, 189, 1584",Unusual OPC UA write pattern detected,-0.117374012,2025-05-09 15:12:00+01:00
+09/05/2025 14:13,39,-,"53218, 53373","136, 74, 253, 100, 204",Unusual OPC UA write pattern detected,-0.139127899,2025-05-09 15:13:00+01:00
+09/05/2025 14:28,54,-,"53373, 53218","253, 100, 204, 189, 1584",Unusual OPC UA write pattern detected,-0.017986889,2025-05-09 15:28:00+01:00
+09/05/2025 14:29,55,-,"53373, 53218","253, 100, 1558, 204, 74",Unusual OPC UA write pattern detected,-0.139127899,2025-05-09 15:29:00+01:00
+09/05/2025 14:30,56,-,"53373, 53218","253, 100, 204, 189, 160",Unusual OPC UA write pattern detected,-0.017986889,2025-05-09 15:30:00+01:00
+09/05/2025 14:32,58,-,"53373, 53218","253, 100, 204, 189, 1679",Unusual OPC UA write pattern detected,-0.000419435,2025-05-09 15:32:00+01:00
+09/05/2025 14:36,62,-,"53373, 53218","253, 100, 204, 189, 1608",Unusual OPC UA write pattern detected,-0.003764613,2025-05-09 15:36:00+01:00
+09/05/2025 14:43,69,-,"53373, 53218","253, 100, 204, 189, 96",Unusual OPC UA write pattern detected,-0.003764613,2025-05-09 15:43:00+01:00
+09/05/2025 14:46,72,-,"53373, 53218","253, 100, 204, 189, 1711",Unusual OPC UA write pattern detected,-0.128723169,2025-05-09 15:46:00+01:00
+09/05/2025 14:47,73,-,"53373, 53218","253, 100, 204, 189, 159",Unusual OPC UA write pattern detected,-0.092579037,2025-05-09 15:47:00+01:00
+09/05/2025 14:49,75,-,"53373, 53218","253, 100, 204, 189, 1608",Unusual OPC UA write pattern detected,-0.139127899,2025-05-09 15:49:00+01:00
+09/05/2025 14:58,84,"-, MCDData.Conveyor2_Sensor, MCDData.Conveyor1_Sensor","53373, 53218","253, 100, 204, 189, 1685",Unusual OPC UA write pattern detected,-0.043581034,2025-05-09 15:58:00+01:00
+09/05/2025 14:59,85,"-, MCDData.Conveyor3_Sensor, MCDData.Conveyor1_Speed, MCDData.Conveyor2_Speed","53373, 53218","253, 100, 204, 189, 225",Unusual OPC UA write pattern detected,-0.064710802,2025-05-09 15:59:00+01:00
+09/05/2025 15:00,86,"-, MCDData.Conveyor3_Speed","53373, 53218","253, 100, 204, 189, 1631",Unusual OPC UA write pattern detected,-0.068325584,2025-05-09 16:00:00+01:00
+09/05/2025 15:01,87,"-, MCDData.Gripper_Sensor, MCDData.Gripper_UP_Limit, MCDData.Gripper_LO_Limit","53373, 53218","253, 100, 204, 189, 1608",Unusual OPC UA write pattern detected,-0.139127899,2025-05-09 16:01:00+01:00
+09/05/2025 15:02,88,"-, MCDData.Gripper_Z_Speed","53373, 53218","253, 100, 204, 189, 1558",Unusual OPC UA write pattern detected,-0.139127899,2025-05-09 16:02:00+01:00
+09/05/2025 15:03,89,"-, MCDData.Gripper_Z_Speed, MCDData.Gripper_LO_Limit, MCDData.Gripper_UP_Limit, MCDData.Gripper_Sensor","53218, 53373","1584, 74, 253, 100, 204",Unusual OPC UA write pattern detected,-0.043581034,2025-05-09 16:03:00+01:00
+09/05/2025 15:04,90,"-, MCDData.GetBox_signal, MCDData.MCD_GetBoxDone, MCDData.Gripper_Z_Speed","53373, 53218","253, 100, 204, 189, 1656",Unusual OPC UA write pattern detected,-0.058090675,2025-05-09 16:04:00+01:00
+09/05/2025 15:10,96,-,"53373, 53218","253, 100, 204, 189, 1584",Unusual OPC UA write pattern detected,-0.076109328,2025-05-09 16:10:00+01:00
+09/05/2025 15:15,101,-,"53373, 53218","189, 253, 100, 204, 1608",Unusual OPC UA write pattern detected,-0.043581034,2025-05-09 16:15:00+01:00
+09/05/2025 15:16,102,-,"53373, 53218","253, 100, 204, 189, 1558",Unusual OPC UA write pattern detected,-0.075070138,2025-05-09 16:16:00+01:00
+09/05/2025 15:30,116,-,"53373, 53218","253, 100, 204, 189, 1656",Unusual OPC UA write pattern detected,-0.088806228,2025-05-09 16:30:00+01:00
+09/05/2025 15:43,129,-,"53373, 53218","253, 100, 204, 189, 1634",Unusual OPC UA write pattern detected,-0.069352292,2025-05-09 16:43:00+01:00
+09/05/2025 15:51,137,-,"53373, 53218, 52130, 52131","253, 100, 204, 189, 1685",Unusual OPC UA write pattern detected,-0.139127899,2025-05-09 16:51:00+01:00
+09/05/2025 15:52,138,-,"53373, 53218, 52131","253, 100, 204, 189, 2282",Unusual OPC UA write pattern detected,-0.139127899,2025-05-09 16:52:00+01:00
+09/05/2025 15:53,139,"-, MCDData.Conveyor2_Speed","53373, 53218, 52131","253, 100, 204, 189, 2488",Unusual OPC UA write pattern detected,-0.139127899,2025-05-09 16:53:00+01:00
+09/05/2025 15:54,140,"-, MCDData.Conveyor3_Speed","53373, 53218, 52131","253, 100, 204, 189, 422",Unusual OPC UA write pattern detected,-0.139127899,2025-05-09 16:54:00+01:00
+09/05/2025 15:55,141,"-, MCDData.Conveyor3_Speed","53373, 52131, 53218","253, 100, 204, 189, 136",Unusual OPC UA write pattern detected,-0.139127899,2025-05-09 16:55:00+01:00
+09/05/2025 15:56,142,-,"53373, 53218, 52131","253, 100, 204, 189, 2417",Unusual OPC UA write pattern detected,-0.139127899,2025-05-09 16:56:00+01:00
+09/05/2025 15:57,143,"-, MCDData.Conveyor3_Speed","53373, 53218, 52131","253, 100, 204, 189, 2391",Unusual OPC UA write pattern detected,-0.139127899,2025-05-09 16:57:00+01:00
+09/05/2025 15:58,144,"-, MCDData.GetBox_signal, MCDData.RotatePosition","53373, 52131, 53218","253, 100, 204, 189, 159",Unusual OPC UA write pattern detected,-0.139127899,2025-05-09 16:58:00+01:00
+09/05/2025 15:59,145,"-, MCDData.RotatePosition, MCDData.Gripper_Z_Speed","53373, 52131, 53218","253, 100, 204, 189, 132",Unusual OPC UA write pattern detected,-0.139127899,2025-05-09 16:59:00+01:00
+09/05/2025 16:00,146,"-, MCDData.RotatePosition","53373, 52131, 53218","253, 100, 204, 189, 132",Unusual OPC UA write pattern detected,-0.139127899,2025-05-09 17:00:00+01:00
+09/05/2025 16:01,147,-,"52131, 53373, 53218","85, 66, 253, 100, 204",Unusual OPC UA write pattern detected,-0.117374012,2025-05-09 17:01:00+01:00
+09/05/2025 16:02,148,,"53218, 53373","1787, 74, 1582, 96, 66",Unusual OPC UA write pattern detected,-0.139127899,2025-05-09 17:02:00+01:00
