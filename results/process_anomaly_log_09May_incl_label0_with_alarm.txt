@@ -1,0 +1,76 @@
+Time 2025-05-09 15:59
+Predicted Label: 0 – Label 0: Normal_NoIntervention
+Class Probabilities: Class 0: 100.00% | Class 1: 0.00% | Class 2: 0.00% | Class 3: 0.00% | Class 4: 0.00%
+Alarm Count: 5, High Priority: 0
+Sources: prov:default:/tag:Conveyor2_Speed:/alm:High Speed Alarm - Conveyor 2
+------------------------------------------------------------
+Time 2025-05-09 16:00
+Predicted Label: 0 – Label 0: Normal_NoIntervention
+Class Probabilities: Class 0: 99.99% | Class 1: 0.00% | Class 2: 0.01% | Class 3: 0.00% | Class 4: 0.00%
+Alarm Count: 3, High Priority: 0
+Sources: prov:default:/tag:Conveyor3_Speed:/alm:High Speed Alarm - Conveyor 3
+------------------------------------------------------------
+Time 2025-05-09 16:01
+Predicted Label: 0 – Label 0: Normal_NoIntervention
+Class Probabilities: Class 0: 100.00% | Class 1: 0.00% | Class 2: 0.00% | Class 3: 0.00% | Class 4: 0.00%
+Alarm Count: 3, High Priority: 0
+Sources: prov:default:/tag:Conveyor3_Speed:/alm:High Speed Alarm - Conveyor 3
+------------------------------------------------------------
+Time 2025-05-09 16:03
+Predicted Label: 1 – Label 1: Conveyor_SpeedManipulation
+Class Probabilities: Class 0: 2.79% | Class 1: 97.00% | Class 2: 0.05% | Class 3: 0.05% | Class 4: 0.11%
+No alarm raised.
+------------------------------------------------------------
+Time 2025-05-09 16:04
+Predicted Label: 1 – Label 1: Conveyor_SpeedManipulation
+Class Probabilities: Class 0: 0.77% | Class 1: 98.17% | Class 2: 0.02% | Class 3: 1.03% | Class 4: 0.01%
+No alarm raised.
+------------------------------------------------------------
+Time 2025-05-09 16:05
+Predicted Label: 1 – Label 1: Conveyor_SpeedManipulation
+Class Probabilities: Class 0: 0.05% | Class 1: 99.80% | Class 2: 0.00% | Class 3: 0.13% | Class 4: 0.02%
+No alarm raised.
+------------------------------------------------------------
+Time 2025-05-09 16:07
+Predicted Label: 1 – Label 1: Conveyor_SpeedManipulation
+Class Probabilities: Class 0: 0.00% | Class 1: 100.00% | Class 2: 0.00% | Class 3: 0.00% | Class 4: 0.00%
+No alarm raised.
+------------------------------------------------------------
+Time 2025-05-09 16:53
+Predicted Label: 0 – Label 0: Normal_NoIntervention
+Class Probabilities: Class 0: 99.37% | Class 1: 0.03% | Class 2: 0.52% | Class 3: 0.05% | Class 4: 0.04%
+Alarm Count: 1, High Priority: 0
+Sources: prov:default:/tag:Conveyor2_Speed:/alm:High Speed Alarm - Conveyor 2
+------------------------------------------------------------
+Time 2025-05-09 16:54
+Predicted Label: 0 – Label 0: Normal_NoIntervention
+Class Probabilities: Class 0: 99.99% | Class 1: 0.00% | Class 2: 0.01% | Class 3: 0.00% | Class 4: 0.00%
+Alarm Count: 3, High Priority: 0
+Sources: prov:default:/tag:Conveyor2_Speed:/alm:High Speed Alarm - Conveyor 2, prov:default:/tag:Conveyor3_Speed:/alm:High Speed Alarm - Conveyor 3
+------------------------------------------------------------
+Time 2025-05-09 16:57
+Predicted Label: 0 – Label 0: Normal_NoIntervention
+Class Probabilities: Class 0: 94.82% | Class 1: 4.64% | Class 2: 0.12% | Class 3: 0.25% | Class 4: 0.18%
+Alarm Count: 2, High Priority: 0
+Sources: prov:default:/tag:Conveyor3_Speed:/alm:High Speed Alarm - Conveyor 3
+------------------------------------------------------------
+Time 2025-05-09 16:58
+Predicted Label: 1 – Label 1: Conveyor_SpeedManipulation
+Class Probabilities: Class 0: 0.01% | Class 1: 99.78% | Class 2: 0.01% | Class 3: 0.02% | Class 4: 0.19%
+No alarm raised.
+------------------------------------------------------------
+Time 2025-05-09 16:59
+Predicted Label: 1 – Label 1: Conveyor_SpeedManipulation
+Class Probabilities: Class 0: 0.01% | Class 1: 99.42% | Class 2: 0.00% | Class 3: 0.01% | Class 4: 0.55%
+No alarm raised.
+------------------------------------------------------------
+Time 2025-05-09 17:00
+Predicted Label: 4 – Label 4: Gripper_RotationDeviation
+Class Probabilities: Class 0: 0.00% | Class 1: 0.13% | Class 2: 0.01% | Class 3: 0.02% | Class 4: 99.84%
+No alarm raised.
+------------------------------------------------------------
+Time 2025-05-09 17:01
+Predicted Label: 4 – Label 4: Gripper_RotationDeviation
+Class Probabilities: Class 0: 0.01% | Class 1: 8.54% | Class 2: 0.04% | Class 3: 0.05% | Class 4: 91.35%
+No alarm raised.
+------------------------------------------------------------
