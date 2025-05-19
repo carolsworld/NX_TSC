@@ -1,11 +1,11 @@
 Instance,Attack,Predicted Label,Predicted Label Description,Prob_Class_0,Prob_Class_1,Prob_Class_2,Prob_Class_3,Prob_Class_4
-0,"Conveyor2_Speed, Conveyor3_Speed, GetBox_signal",1,Label 1: Conveyor_SpeedManipulation,1.09%,89.03%,3.87%,4.28%,1.72%
-1,"Gripper_Z_Speed, GetBox_signal",3,Label 3: Gripper_ZAxisDirectionManipulation,0.08%,14.46%,26.35%,58.79%,0.31%
-2,"Conveyor3_Speed, Gripper_Z_Speed",4,Label 4: Gripper_RotationDeviation,0.0%,1.99%,0.0%,0.03%,97.98%
-3,"Conveyor2_Speed, GetBox_signal",1,Label 1: Conveyor_SpeedManipulation,0.01%,99.87%,0.07%,0.04%,0.01%
-4,"Conveyor2_Speed, RotatePosition",4,Label 4: Gripper_RotationDeviation,0.0%,0.0%,0.0%,0.0%,100.0%
-5,"Gripper_Z_Speed, Conveyor3_Speed",2,Label 2: Gripper_SuctionForceRelease,0.98%,17.25%,81.44%,0.29%,0.03%
-6,"GetBox_signal, Gripper_Z_Speed",2,Label 2: Gripper_SuctionForceRelease,0.0%,0.0%,99.97%,0.02%,0.0%
-7,"Conveyor3_Speed, GetBox_signal",2,Label 2: Gripper_SuctionForceRelease,0.01%,27.27%,71.69%,0.93%,0.11%
-8,"Conveyor2_Speed, Gripper_Z_Speed",1,Label 1: Conveyor_SpeedManipulation,0.05%,83.65%,0.22%,16.05%,0.03%
-9,"GetBox_signal, RotatePosition",0,Label 0: Normal_NoIntervention,61.78%,0.0%,38.21%,0.0%,0.0%
+0,"Conveyor2_Speed, Conveyor3_Speed, GetBox_signal",1,Label 1: Conveyor_SpeedManipulation,2.29%,90.45%,0.55%,5.22%,1.48%
+1,"Gripper_Z_Speed, GetBox_signal",3,Label 3: Gripper_ZAxisDirectionManipulation,0.35%,7.03%,20.3%,71.01%,1.3%
+2,"Conveyor3_Speed, Gripper_Z_Speed",4,Label 4: Gripper_RotationDeviation,0.0%,27.39%,0.0%,0.8%,71.81%
+3,"Conveyor2_Speed, GetBox_signal",1,Label 1: Conveyor_SpeedManipulation,0.05%,99.66%,0.08%,0.19%,0.02%
+4,"Conveyor2_Speed, RotatePosition",4,Label 4: Gripper_RotationDeviation,0.0%,2.11%,0.0%,0.02%,97.87%
+5,"Gripper_Z_Speed, Conveyor3_Speed",2,Label 2: Gripper_SuctionForceRelease,0.79%,41.67%,57.16%,0.36%,0.02%
+6,"GetBox_signal, Gripper_Z_Speed",2,Label 2: Gripper_SuctionForceRelease,0.0%,0.0%,99.97%,0.02%,0.01%
+7,"Conveyor3_Speed, GetBox_signal",2,Label 2: Gripper_SuctionForceRelease,0.0%,20.92%,78.82%,0.24%,0.01%
+8,"Conveyor2_Speed, Gripper_Z_Speed",1,Label 1: Conveyor_SpeedManipulation,0.03%,95.44%,0.01%,4.49%,0.02%
+9,"GetBox_signal, RotatePosition",2,Label 2: Gripper_SuctionForceRelease,34.97%,0.0%,65.03%,0.0%,0.0%
