@@ -1,0 +1,232 @@
+timestamp_minute,anomaly_score,triggered_features,rationale_text
+2025-05-09 11:13:00,2,"['anomaly_medium_or_higher', 'anomaly_score']",Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 11:14:00,6,"['anomaly_medium_or_higher', 'anomaly_score']",Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 11:15:00,14,"['anomaly_medium_or_higher', 'anomaly_score']",Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 11:16:00,6,"['anomaly_medium_or_higher', 'anomaly_score']",Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 11:18:00,2,"['anomaly_medium_or_higher', 'anomaly_score']",Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 11:19:00,0,[],
+2025-05-09 11:20:00,0,[],
+2025-05-09 11:21:00,2,"['anomaly_logonProcess', 'anomaly_score']",Suspicious logon process (user32 or NtLmSsp)
+2025-05-09 11:22:00,18,"['anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_medium_or_higher', 'anomaly_score']",Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 11:23:00,0,[],
+2025-05-09 11:24:00,0,[],
+2025-05-09 11:25:00,0,[],
+2025-05-09 11:26:00,0,[],
+2025-05-09 11:27:00,2,"['anomaly_medium_or_higher', 'anomaly_score']",Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 11:28:00,4,"['anomaly_medium_or_higher', 'anomaly_score']",Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 11:29:00,0,[],
+2025-05-09 11:30:00,0,[],
+2025-05-09 11:31:00,0,[],
+2025-05-09 11:32:00,0,[],
+2025-05-09 11:33:00,4,"['anomaly_ruleid_92052', 'anomaly_score']",cmd prompt started by suspicious process [T1059.003]
+2025-05-09 11:34:00,0,[],
+2025-05-09 11:35:00,0,[],
+2025-05-09 11:36:00,8,"['anomaly_ruleid_92052', 'anomaly_score']",cmd prompt started by suspicious process [T1059.003]
+2025-05-09 11:37:00,2,"['anomaly_medium_or_higher', 'anomaly_score']",Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 11:38:00,0,[],
+2025-05-09 11:39:00,0,[],
+2025-05-09 13:10:00,2,"['anomaly_medium_or_higher', 'anomaly_score']",Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 13:11:00,0,[],
+2025-05-09 13:12:00,0,[],
+2025-05-09 13:13:00,2,"['anomaly_medium_or_higher', 'anomaly_score']",Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 13:15:00,0,[],
+2025-05-09 13:16:00,2,"['anomaly_medium_or_higher', 'anomaly_score']",Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 13:18:00,0,[],
+2025-05-09 13:21:00,12,"['anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_medium_or_higher', 'anomaly_score']",Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 13:22:00,2,"['anomaly_medium_or_higher', 'anomaly_score']",Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 13:23:00,0,[],
+2025-05-09 13:24:00,0,[],
+2025-05-09 13:25:00,8,"['anomaly_medium_or_higher', 'anomaly_score']",Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 13:26:00,2,"['anomaly_logonProcess', 'anomaly_score']",Suspicious logon process (user32 or NtLmSsp)
+2025-05-09 13:27:00,0,[],
+2025-05-09 13:28:00,0,[],
+2025-05-09 13:29:00,8,"['anomaly_ruleid_92052', 'anomaly_score']",cmd prompt started by suspicious process [T1059.003]
+2025-05-09 13:30:00,4,"['anomaly_ruleid_92052', 'anomaly_score']",cmd prompt started by suspicious process [T1059.003]
+2025-05-09 13:31:00,16,"['anomaly_ruleid_92021', 'anomaly_medium_or_higher', 'anomaly_score']",PowerShell deletes files [T1070.004]; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 13:32:00,12,"['anomaly_powershell_4104', 'anomaly_ruleid_92021', 'anomaly_medium_or_higher', 'anomaly_score']",Suspicious PowerShell script (4104); PowerShell deletes files [T1070.004]; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 13:33:00,0,[],
+2025-05-09 13:34:00,0,[],
+2025-05-09 13:35:00,44,"['anomaly_ruleid_92213', 'anomaly_medium_or_higher', 'anomaly_score']",Binary in malware-prone directory [T1105]; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 13:36:00,0,[],
+2025-05-09 13:37:00,4,"['anomaly_ruleid_92213', 'anomaly_medium_or_higher', 'anomaly_score']",Binary in malware-prone directory [T1105]; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 13:38:00,12,"['anomaly_powershell_4104', 'anomaly_medium_or_higher', 'anomaly_score']",Suspicious PowerShell script (4104); Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 13:39:00,0,[],
+2025-05-09 13:40:00,0,[],
+2025-05-09 13:41:00,0,[],
+2025-05-09 13:42:00,0,[],
+2025-05-09 13:43:00,0,[],
+2025-05-09 13:44:00,0,[],
+2025-05-09 13:45:00,0,[],
+2025-05-09 13:47:00,0,[],
+2025-05-09 13:48:00,0,[],
+2025-05-09 13:49:00,0,[],
+2025-05-09 13:50:00,0,[],
+2025-05-09 13:51:00,0,[],
+2025-05-09 13:52:00,0,[],
+2025-05-09 13:53:00,0,[],
+2025-05-09 13:56:00,6,"['anomaly_medium_or_higher', 'anomaly_score']",Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 13:57:00,0,[],
+2025-05-09 13:58:00,8,"['anomaly_medium_or_higher', 'anomaly_score']",Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 13:59:00,0,[],
+2025-05-09 14:00:00,6,"['anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_score']",Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]
+2025-05-09 14:01:00,0,[],
+2025-05-09 14:02:00,0,[],
+2025-05-09 14:03:00,0,[],
+2025-05-09 14:04:00,12,"['anomaly_ruleid_92052', 'anomaly_score']",cmd prompt started by suspicious process [T1059.003]
+2025-05-09 14:05:00,0,[],
+2025-05-09 14:06:00,0,[],
+2025-05-09 14:07:00,0,[],
+2025-05-09 14:08:00,0,[],
+2025-05-09 14:09:00,0,[],
+2025-05-09 14:10:00,0,[],
+2025-05-09 14:11:00,0,[],
+2025-05-09 14:12:00,4,"['anomaly_medium_or_higher', 'anomaly_score']",Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 14:13:00,2,"['anomaly_medium_or_higher', 'anomaly_score']",Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 14:15:00,0,[],
+2025-05-09 14:16:00,0,[],
+2025-05-09 14:17:00,0,[],
+2025-05-09 14:21:00,0,[],
+2025-05-09 14:22:00,0,[],
+2025-05-09 14:24:00,0,[],
+2025-05-09 14:25:00,0,[],
+2025-05-09 14:26:00,0,[],
+2025-05-09 14:27:00,0,[],
+2025-05-09 14:28:00,12,"['anomaly_ruleid_92021', 'anomaly_medium_or_higher', 'anomaly_score']",PowerShell deletes files [T1070.004]; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 14:29:00,14,"['anomaly_ruleid_92021', 'anomaly_medium_or_higher', 'anomaly_score']",PowerShell deletes files [T1070.004]; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 14:30:00,0,[],
+2025-05-09 14:31:00,2,"['anomaly_powershell_4104', 'anomaly_score']",Suspicious PowerShell script (4104)
+2025-05-09 14:32:00,0,[],
+2025-05-09 14:33:00,0,[],
+2025-05-09 14:34:00,0,[],
+2025-05-09 14:35:00,0,[],
+2025-05-09 14:36:00,0,[],
+2025-05-09 14:37:00,0,[],
+2025-05-09 14:40:00,0,[],
+2025-05-09 14:45:00,0,[],
+2025-05-09 14:50:00,0,[],
+2025-05-09 14:52:00,0,[],
+2025-05-09 14:53:00,0,[],
+2025-05-09 14:55:00,0,[],
+2025-05-09 14:56:00,0,[],
+2025-05-09 14:57:00,0,[],
+2025-05-09 14:58:00,2,"['anomaly_medium_or_higher', 'anomaly_score']",Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 15:00:00,2,"['anomaly_medium_or_higher', 'anomaly_score']",Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 15:04:00,0,[],
+2025-05-09 15:05:00,4,"['anomaly_ruleid_92052', 'anomaly_score']",cmd prompt started by suspicious process [T1059.003]
+2025-05-09 15:07:00,12,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_92652', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); NTLM pass-the-hash login [T1550.002]
+2025-05-09 15:09:00,10,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_92652', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); NTLM pass-the-hash login [T1550.002]
+2025-05-09 15:10:00,22,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+2025-05-09 15:11:00,22,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+2025-05-09 15:12:00,28,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+2025-05-09 15:13:00,20,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+2025-05-09 15:14:00,20,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_win_defender', 'anomaly_ruleid_62123', 'anomaly_medium_or_higher', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Windows Defender detected Win32 threat; Defender found potentially unwanted software; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 15:15:00,18,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_win_defender', 'anomaly_ruleid_62124', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Windows Defender detected Win32 threat; Defender blocked unwanted software
+2025-05-09 15:16:00,6,"['anomaly_win_defender', 'anomaly_ruleid_62123', 'anomaly_medium_or_higher', 'anomaly_score']",Windows Defender detected Win32 threat; Defender found potentially unwanted software; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 15:17:00,24,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_92652', 'anomaly_win_defender', 'anomaly_ruleid_62124', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); NTLM pass-the-hash login [T1550.002]; Windows Defender detected Win32 threat; Defender blocked unwanted software
+2025-05-09 15:18:00,12,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_92652', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); NTLM pass-the-hash login [T1550.002]
+2025-05-09 15:19:00,14,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+2025-05-09 15:21:00,14,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+2025-05-09 15:22:00,0,[],
+2025-05-09 15:24:00,12,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_ruleid_92213', 'anomaly_medium_or_higher', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Binary in malware-prone directory [T1105]; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 15:25:00,16,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+2025-05-09 15:26:00,12,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_powershell_4104', 'anomaly_ruleid_91815', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Suspicious PowerShell script (4104); PowerShell process discovery [T1057]
+2025-05-09 15:27:00,16,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+2025-05-09 15:28:00,0,[],
+2025-05-09 15:29:00,20,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_win_defender', 'anomaly_ruleid_62123', 'anomaly_medium_or_higher', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Windows Defender detected Win32 threat; Defender found potentially unwanted software; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 15:30:00,22,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_ruleid_100206', 'anomaly_win_defender', 'anomaly_ruleid_62124', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Webrequest download cradle [T1059.001]; Windows Defender detected Win32 threat; Defender blocked unwanted software
+2025-05-09 15:31:00,118,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_powershell_4104', 'anomaly_ruleid_91811', 'anomaly_ruleid_100206', 'anomaly_ruleid_92207', 'anomaly_medium_or_higher', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Suspicious PowerShell script (4104); PowerShell Expand-Archive run [T1105]; Webrequest download cradle [T1059.001]; Binary dropped in Users\Public; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 15:32:00,0,[],
+2025-05-09 15:33:00,8,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+2025-05-09 15:35:00,52,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_cmd_in_parent', 'anomaly_ruleid_92032', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; cmd.exe launched by unusual parent process; Suspicious Windows cmd shell exec [T1087/T1059.003]
+2025-05-09 15:36:00,4,"['anomaly_cmd_in_parent', 'anomaly_ruleid_92032', 'anomaly_score']",cmd.exe launched by unusual parent process; Suspicious Windows cmd shell exec [T1087/T1059.003]
+2025-05-09 15:37:00,0,[],
+2025-05-09 15:38:00,0,[],
+2025-05-09 15:41:00,18,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_powershell_4104', 'anomaly_ruleid_91816', 'anomaly_ruleid_60635', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Suspicious PowerShell script (4104); PowerShell queries env variables [T1082]; Windows installer reconfigured product
+2025-05-09 15:42:00,12,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_powershell_4104', 'anomaly_ruleid_91816', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Suspicious PowerShell script (4104); PowerShell queries env variables [T1082]
+2025-05-09 15:44:00,24,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_powershell_4104', 'anomaly_ruleid_91816', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Suspicious PowerShell script (4104); PowerShell queries env variables [T1082]
+2025-05-09 15:45:00,10,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92037', 'anomaly_ruleid_92652', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; Remote net.exe run via wsmprovhost [T1567]; NTLM pass-the-hash login [T1550.002]
+2025-05-09 15:46:00,12,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_powershell_4104', 'anomaly_ruleid_91816', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Suspicious PowerShell script (4104); PowerShell queries env variables [T1082]
+2025-05-09 15:47:00,38,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92037', 'anomaly_ruleid_92652', 'anomaly_powershell_4104', 'anomaly_ruleid_91816', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; Remote net.exe run via wsmprovhost [T1567]; NTLM pass-the-hash login [T1550.002]; Suspicious PowerShell script (4104); PowerShell queries env variables [T1082]
+2025-05-09 15:48:00,0,[],
+2025-05-09 15:52:00,8,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+2025-05-09 15:55:00,0,[],
+2025-05-09 15:56:00,0,[],
+2025-05-09 15:57:00,0,[],
+2025-05-09 15:58:00,40,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67022', 'anomaly_ruleid_67028', 'anomaly_ruleid_92653', 'anomaly_ruleid_92657', 'anomaly_medium_or_higher', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Non-network/service logon detected; Special privileges assigned to logon [T1484]; RDP connection detected [T1021.001]; NTLM or RDP remote logon [T1550.002 / T1078.002]; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 15:59:00,0,[],
+2025-05-09 16:00:00,2,"['anomaly_medium_or_higher', 'anomaly_score']",Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 16:02:00,0,[],
+2025-05-09 16:05:00,4,"['anomaly_ruleid_92052', 'anomaly_score']",cmd prompt started by suspicious process [T1059.003]
+2025-05-09 16:07:00,0,[],
+2025-05-09 16:11:00,0,[],
+2025-05-09 16:15:00,12,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_ruleid_92213', 'anomaly_medium_or_higher', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Binary in malware-prone directory [T1105]; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 16:16:00,126,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_powershell_4104', 'anomaly_ruleid_91811', 'anomaly_ruleid_100206', 'anomaly_ruleid_92207', 'anomaly_medium_or_higher', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Suspicious PowerShell script (4104); PowerShell Expand-Archive run [T1105]; Webrequest download cradle [T1059.001]; Binary dropped in Users\Public; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 16:17:00,60,"['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67024', 'anomaly_ruleid_67028', 'anomaly_ruleid_92037', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_ruleid_92052', 'anomaly_ruleid_92218', 'anomaly_ruleid_92650', 'anomaly_medium_or_higher', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Service logon from non-standard account; Special privileges assigned to logon [T1484]; Remote net.exe run via wsmprovhost [T1567]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]; cmd prompt started by suspicious process [T1059.003]; Binary dropped in Windows root [T1570]; New suspicious Windows service [T1021.002]; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 16:18:00,52,"['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67024', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_cmd_in_parent', 'anomaly_ruleid_92032', 'anomaly_ruleid_92052', 'anomaly_ruleid_92218', 'anomaly_ruleid_92650', 'anomaly_medium_or_higher', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Service logon from non-standard account; Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]; cmd.exe launched by unusual parent process; Suspicious Windows cmd shell exec [T1087/T1059.003]; cmd prompt started by suspicious process [T1059.003]; Binary dropped in Windows root [T1570]; New suspicious Windows service [T1021.002]; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 16:19:00,30,"['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67024', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_ruleid_92052', 'anomaly_ruleid_92218', 'anomaly_ruleid_92650', 'anomaly_medium_or_higher', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Service logon from non-standard account; Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]; cmd prompt started by suspicious process [T1059.003]; Binary dropped in Windows root [T1570]; New suspicious Windows service [T1021.002]; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 16:20:00,8,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+2025-05-09 16:21:00,26,"['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]
+2025-05-09 16:22:00,36,"['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67024', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_ruleid_92052', 'anomaly_ruleid_92218', 'anomaly_ruleid_92650', 'anomaly_medium_or_higher', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Service logon from non-standard account; Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]; cmd prompt started by suspicious process [T1059.003]; Binary dropped in Windows root [T1570]; New suspicious Windows service [T1021.002]; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 16:23:00,36,"['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67024', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_ruleid_92052', 'anomaly_ruleid_92218', 'anomaly_ruleid_92650', 'anomaly_medium_or_higher', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Service logon from non-standard account; Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]; cmd prompt started by suspicious process [T1059.003]; Binary dropped in Windows root [T1570]; New suspicious Windows service [T1021.002]; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 16:24:00,36,"['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67024', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_ruleid_92052', 'anomaly_ruleid_92218', 'anomaly_ruleid_92650', 'anomaly_medium_or_higher', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Service logon from non-standard account; Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]; cmd prompt started by suspicious process [T1059.003]; Binary dropped in Windows root [T1570]; New suspicious Windows service [T1021.002]; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 16:25:00,8,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+2025-05-09 16:26:00,34,"['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67024', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_ruleid_92068', 'anomaly_ruleid_92213', 'anomaly_ruleid_92218', 'anomaly_ruleid_92650', 'anomaly_medium_or_higher', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Service logon from non-standard account; Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]; PSEXEC PowerShell exec [T1569.002]; Binary in malware-prone directory [T1105]; Binary dropped in Windows root [T1570]; New suspicious Windows service [T1021.002]; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 16:27:00,8,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+2025-05-09 16:28:00,8,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+2025-05-09 16:29:00,8,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+2025-05-09 16:30:00,18,"['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]
+2025-05-09 16:31:00,104,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]
+2025-05-09 16:32:00,18,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92037', 'anomaly_ruleid_92652', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; Remote net.exe run via wsmprovhost [T1567]; NTLM pass-the-hash login [T1550.002]
+2025-05-09 16:33:00,16,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+2025-05-09 16:34:00,40,"['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67024', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_ruleid_92021', 'anomaly_ruleid_92213', 'anomaly_ruleid_92218', 'anomaly_ruleid_92650', 'anomaly_medium_or_higher', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Service logon from non-standard account; Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]; PowerShell deletes files [T1070.004]; Binary in malware-prone directory [T1105]; Binary dropped in Windows root [T1570]; New suspicious Windows service [T1021.002]; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 16:35:00,40,"['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67024', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_ruleid_92021', 'anomaly_ruleid_92213', 'anomaly_ruleid_92218', 'anomaly_ruleid_92650', 'anomaly_medium_or_higher', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Service logon from non-standard account; Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]; PowerShell deletes files [T1070.004]; Binary in malware-prone directory [T1105]; Binary dropped in Windows root [T1570]; New suspicious Windows service [T1021.002]; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 16:37:00,40,"['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67024', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_ruleid_92021', 'anomaly_ruleid_92213', 'anomaly_ruleid_92218', 'anomaly_ruleid_92650', 'anomaly_medium_or_higher', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Service logon from non-standard account; Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]; PowerShell deletes files [T1070.004]; Binary in malware-prone directory [T1105]; Binary dropped in Windows root [T1570]; New suspicious Windows service [T1021.002]; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 16:38:00,40,"['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67024', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_ruleid_92021', 'anomaly_ruleid_92213', 'anomaly_ruleid_92218', 'anomaly_ruleid_92650', 'anomaly_medium_or_higher', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Service logon from non-standard account; Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]; PowerShell deletes files [T1070.004]; Binary in malware-prone directory [T1105]; Binary dropped in Windows root [T1570]; New suspicious Windows service [T1021.002]; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 16:39:00,8,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+2025-05-09 16:41:00,0,[],
+2025-05-09 16:45:00,0,[],
+2025-05-09 16:49:00,20,"['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67022', 'anomaly_ruleid_67028', 'anomaly_ruleid_92657', 'anomaly_medium_or_higher', 'anomaly_score']",NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Non-network/service logon detected; Special privileges assigned to logon [T1484]; NTLM or RDP remote logon [T1550.002 / T1078.002]; Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 16:50:00,10,"['anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92653', 'anomaly_score']",Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; RDP connection detected [T1021.001]
+2025-05-09 16:51:00,0,[],
+2025-05-09 16:52:00,0,[],
+2025-05-09 16:53:00,0,[],
+2025-05-09 16:54:00,0,[],
+2025-05-09 16:55:00,0,[],
+2025-05-09 16:56:00,0,[],
+2025-05-09 16:57:00,0,[],
+2025-05-09 16:58:00,2,"['anomaly_medium_or_higher', 'anomaly_score']",Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 16:59:00,2,"['anomaly_medium_or_higher', 'anomaly_score']",Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 17:00:00,4,"['anomaly_medium_or_higher', 'anomaly_score']",Wazuh rule level 7 or above (medium/high severity)
+2025-05-09 17:01:00,0,[],
+2025-05-09 17:02:00,0,[],
+2025-05-09 17:04:00,0,[],
+2025-05-09 17:05:00,4,"['anomaly_ruleid_92052', 'anomaly_score']",cmd prompt started by suspicious process [T1059.003]
+2025-05-09 17:06:00,0,[],
+2025-05-09 17:09:00,0,[],
+2025-05-09 17:10:00,0,[],
+2025-05-09 17:11:00,0,[],
+2025-05-09 17:15:00,0,[],
+2025-05-09 17:16:00,0,[],
+2025-05-09 17:19:00,0,[],
+2025-05-09 17:20:00,0,[],
+2025-05-09 17:22:00,0,[],
+2025-05-09 17:24:00,0,[],
+2025-05-09 17:26:00,0,[],
+2025-05-09 17:27:00,0,[],
+2025-05-09 17:28:00,0,[],
+2025-05-09 17:29:00,0,[],
+2025-05-09 17:30:00,0,[],
+2025-05-09 17:31:00,0,[],
+2025-05-09 17:39:00,0,[],
+2025-05-09 17:41:00,0,[],
+2025-05-09 17:43:00,0,[],
+2025-05-09 17:45:00,0,[],
+2025-05-09 17:48:00,6,"['anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_score']",Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]
+2025-05-09 17:49:00,0,[],
+2025-05-09 17:50:00,0,[],
+2025-05-09 17:51:00,0,[],
+2025-05-09 17:52:00,0,[],
+2025-05-09 17:53:00,0,[],
+2025-05-09 17:54:00,0,[],
+2025-05-09 17:55:00,0,[],
+2025-05-09 17:56:00,0,[],
