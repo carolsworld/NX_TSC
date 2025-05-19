@@ -1,0 +1,696 @@
+
+Time 2025-05-09 14:38:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 1 (Only Network Data Available): Likely Anomaly
+  - Network Anomaly Score: -0.088
+  - OPC UA Message Sizes: 253, 100, 204, 189, 1584
+------------------------------------------------------------
+
+Time 2025-05-09 14:58:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 2
+  - Triggered Features: ['anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 15:00:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 2
+  - Triggered Features: ['anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 15:04:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 1 (Only Network Data Available): Likely Anomaly
+  - Network Anomaly Score: -0.000
+  - OPC UA Message Sizes: 253, 100, 204, 189, 96
+------------------------------------------------------------
+
+Time 2025-05-09 15:05:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 1 (Only Network Data Available): Likely Anomaly
+  - Network Anomaly Score: -0.139
+  - OPC UA Message Sizes: 96, 74, 1582, 66, 414
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 4
+  - Triggered Features: ['anomaly_ruleid_92052', 'anomaly_score']
+  - Explanation: cmd prompt started by suspicious process [T1059.003]
+------------------------------------------------------------
+
+Time 2025-05-09 15:07:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 12
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_92652', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); NTLM pass-the-hash login [T1550.002]
+------------------------------------------------------------
+
+Time 2025-05-09 15:09:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 10
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_92652', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); NTLM pass-the-hash login [T1550.002]
+------------------------------------------------------------
+
+Time 2025-05-09 15:10:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 1 (Only Network Data Available): Likely Anomaly
+  - Network Anomaly Score: -0.000
+  - OPC UA Message Sizes: 253, 100, 204, 189, 1682
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 22
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+------------------------------------------------------------
+
+Time 2025-05-09 15:11:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 22
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+------------------------------------------------------------
+
+Time 2025-05-09 15:12:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 1 (Only Network Data Available): Likely Anomaly
+  - Network Anomaly Score: -0.117
+  - OPC UA Message Sizes: 253, 100, 204, 189, 1584
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 28
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+------------------------------------------------------------
+
+Time 2025-05-09 15:13:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 1 (Only Network Data Available): Likely Anomaly
+  - Network Anomaly Score: -0.139
+  - OPC UA Message Sizes: 136, 74, 253, 100, 204
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 20
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+------------------------------------------------------------
+
+Time 2025-05-09 15:14:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 20
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_win_defender', 'anomaly_ruleid_62123', 'anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Windows Defender detected Win32 threat; Defender found potentially unwanted software; Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 15:15:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 18
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_win_defender', 'anomaly_ruleid_62124', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Windows Defender detected Win32 threat; Defender blocked unwanted software
+------------------------------------------------------------
+
+Time 2025-05-09 15:16:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 6
+  - Triggered Features: ['anomaly_win_defender', 'anomaly_ruleid_62123', 'anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: Windows Defender detected Win32 threat; Defender found potentially unwanted software; Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 15:17:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 24
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_92652', 'anomaly_win_defender', 'anomaly_ruleid_62124', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); NTLM pass-the-hash login [T1550.002]; Windows Defender detected Win32 threat; Defender blocked unwanted software
+------------------------------------------------------------
+
+Time 2025-05-09 15:18:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 12
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_92652', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); NTLM pass-the-hash login [T1550.002]
+------------------------------------------------------------
+
+Time 2025-05-09 15:19:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 14
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+------------------------------------------------------------
+
+Time 2025-05-09 15:21:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 14
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+------------------------------------------------------------
+
+Time 2025-05-09 15:24:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 12
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_ruleid_92213', 'anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Binary in malware-prone directory [T1105]; Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 15:25:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 16
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+------------------------------------------------------------
+
+Time 2025-05-09 15:26:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 12
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_powershell_4104', 'anomaly_ruleid_91815', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Suspicious PowerShell script (4104); PowerShell process discovery [T1057]
+------------------------------------------------------------
+
+Time 2025-05-09 15:27:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 16
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+------------------------------------------------------------
+
+Time 2025-05-09 15:29:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 20
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_win_defender', 'anomaly_ruleid_62123', 'anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Windows Defender detected Win32 threat; Defender found potentially unwanted software; Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 15:30:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 22
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_ruleid_100206', 'anomaly_win_defender', 'anomaly_ruleid_62124', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Webrequest download cradle [T1059.001]; Windows Defender detected Win32 threat; Defender blocked unwanted software
+------------------------------------------------------------
+
+Time 2025-05-09 15:31:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 118
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_powershell_4104', 'anomaly_ruleid_91811', 'anomaly_ruleid_100206', 'anomaly_ruleid_92207', 'anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Suspicious PowerShell script (4104); PowerShell Expand-Archive run [T1105]; Webrequest download cradle [T1059.001]; Binary dropped in Users\Public; Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 15:33:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 8
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+------------------------------------------------------------
+
+Time 2025-05-09 15:35:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 52
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_cmd_in_parent', 'anomaly_ruleid_92032', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; cmd.exe launched by unusual parent process; Suspicious Windows cmd shell exec [T1087/T1059.003]
+------------------------------------------------------------
+
+Time 2025-05-09 15:36:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 4
+  - Triggered Features: ['anomaly_cmd_in_parent', 'anomaly_ruleid_92032', 'anomaly_score']
+  - Explanation: cmd.exe launched by unusual parent process; Suspicious Windows cmd shell exec [T1087/T1059.003]
+------------------------------------------------------------
+
+Time 2025-05-09 15:41:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 18
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_powershell_4104', 'anomaly_ruleid_91816', 'anomaly_ruleid_60635', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Suspicious PowerShell script (4104); PowerShell queries env variables [T1082]; Windows installer reconfigured product
+------------------------------------------------------------
+
+Time 2025-05-09 15:42:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 12
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_powershell_4104', 'anomaly_ruleid_91816', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Suspicious PowerShell script (4104); PowerShell queries env variables [T1082]
+------------------------------------------------------------
+
+Time 2025-05-09 15:44:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 24
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_powershell_4104', 'anomaly_ruleid_91816', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Suspicious PowerShell script (4104); PowerShell queries env variables [T1082]
+------------------------------------------------------------
+
+Time 2025-05-09 15:45:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 10
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92037', 'anomaly_ruleid_92652', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; Remote net.exe run via wsmprovhost [T1567]; NTLM pass-the-hash login [T1550.002]
+------------------------------------------------------------
+
+Time 2025-05-09 15:46:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 12
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_powershell_4104', 'anomaly_ruleid_91816', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Suspicious PowerShell script (4104); PowerShell queries env variables [T1082]
+------------------------------------------------------------
+
+Time 2025-05-09 15:47:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 38
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92037', 'anomaly_ruleid_92652', 'anomaly_powershell_4104', 'anomaly_ruleid_91816', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; Remote net.exe run via wsmprovhost [T1567]; NTLM pass-the-hash login [T1550.002]; Suspicious PowerShell script (4104); PowerShell queries env variables [T1082]
+------------------------------------------------------------
+
+Time 2025-05-09 15:49:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 1 (Only Network Data Available): Likely Anomaly
+  - Network Anomaly Score: -0.139
+  - OPC UA Message Sizes: 253, 100, 204, 189, 1608
+------------------------------------------------------------
+
+Time 2025-05-09 15:52:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 8
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+------------------------------------------------------------
+
+Time 2025-05-09 15:58:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 3 (Predictions Aligned): Anomaly - Process Score equals or greater than 0.8 or Alarm Triggered
+  - Network Anomaly Score: -0.044
+  - Unique Write Targets: 2
+  - Node IDs Written: -, MCDData.Conveyor2_Sensor, MCDData.Conveyor1_Sensor
+  - OPC UA Message Sizes: 253, 100, 204, 189, 1685
+  - Process Prediction: Class 0
+    Class Probabilities: Class 0: 99.8% | Class 1: 0.0% | Class 2: 0.2% | Class 3: 0.0% | Class 4: 0.0%
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 40
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67022', 'anomaly_ruleid_67028', 'anomaly_ruleid_92653', 'anomaly_ruleid_92657', 'anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Non-network/service logon detected; Special privileges assigned to logon [T1484]; RDP connection detected [T1021.001]; NTLM or RDP remote logon [T1550.002 / T1078.002]; Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 15:59:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 3 (Predictions Aligned): Anomaly - Process Score equals or greater than 0.8 or Alarm Triggered
+  - Network Anomaly Score: -0.065
+  - Unique Write Targets: 3
+  - Node IDs Written: -, MCDData.Conveyor3_Sensor, MCDData.Conveyor1_Speed, MCDData.Conveyor2_Speed
+  - OPC UA Message Sizes: 253, 100, 204, 189, 225
+  - Process Alarms: 5
+  - Process Prediction: Class 0
+    Class Probabilities: Class 0: 100.0% | Class 1: 0.0% | Class 2: 0.0% | Class 3: 0.0% | Class 4: 0.0%
+------------------------------------------------------------
+
+Time 2025-05-09 16:00:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 3 (Predictions Aligned): Anomaly - Process Score equals or greater than 0.8 or Alarm Triggered
+  - Network Anomaly Score: -0.068
+  - Unique Write Targets: 1
+  - Node IDs Written: -, MCDData.Conveyor3_Speed
+  - OPC UA Message Sizes: 253, 100, 204, 189, 1631
+  - Process Alarms: 3
+  - Process Prediction: Class 0
+    Class Probabilities: Class 0: 100.0% | Class 1: 0.0% | Class 2: 0.0% | Class 3: 0.0% | Class 4: 0.0%
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 2
+  - Triggered Features: ['anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 16:01:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 3 (Predictions Aligned): Anomaly - Process Score equals or greater than 0.8 or Alarm Triggered
+  - Network Anomaly Score: -0.139
+  - Unique Write Targets: 3
+  - Node IDs Written: -, MCDData.Gripper_Sensor, MCDData.Gripper_UP_Limit, MCDData.Gripper_LO_Limit
+  - OPC UA Message Sizes: 253, 100, 204, 189, 1608
+  - Process Alarms: 3
+  - Process Prediction: Class 0
+    Class Probabilities: Class 0: 100.0% | Class 1: 0.0% | Class 2: 0.0% | Class 3: 0.0% | Class 4: 0.0%
+------------------------------------------------------------
+
+Time 2025-05-09 16:02:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 3 (Predictions Aligned): Anomaly - Process Score equals or greater than 0.8 or Alarm Triggered
+  - Network Anomaly Score: -0.139
+  - Unique Write Targets: 1
+  - Node IDs Written: -, MCDData.Gripper_Z_Speed
+  - OPC UA Message Sizes: 253, 100, 204, 189, 1558
+  - Process Prediction: Class 0
+    Class Probabilities: Class 0: 100.0% | Class 1: 0.0% | Class 2: 0.0% | Class 3: 0.0% | Class 4: 0.0%
+------------------------------------------------------------
+
+Time 2025-05-09 16:03:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 3 (Predictions Aligned): Anomaly - Process Score equals or greater than 0.8 or Alarm Triggered
+  - Network Anomaly Score: -0.044
+  - Unique Write Targets: 4
+  - Node IDs Written: -, MCDData.Gripper_Z_Speed, MCDData.Gripper_LO_Limit, MCDData.Gripper_UP_Limit, MCDData.Gripper_Sensor
+  - OPC UA Message Sizes: 1584, 74, 253, 100, 204
+  - Process Prediction: Class 1
+    Class Probabilities: Class 0: 2.8% | Class 1: 97.0% | Class 2: 0.1% | Class 3: 0.1% | Class 4: 0.1%
+------------------------------------------------------------
+
+Time 2025-05-09 16:04:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 3 (Predictions Aligned): Anomaly - Process Score equals or greater than 0.8 or Alarm Triggered
+  - Network Anomaly Score: -0.058
+  - Unique Write Targets: 3
+  - Node IDs Written: -, MCDData.GetBox_signal, MCDData.MCD_GetBoxDone, MCDData.Gripper_Z_Speed
+  - OPC UA Message Sizes: 253, 100, 204, 189, 1656
+  - Process Prediction: Class 1
+    Class Probabilities: Class 0: 0.8% | Class 1: 98.2% | Class 2: 0.0% | Class 3: 1.0% | Class 4: 0.0%
+------------------------------------------------------------
+
+Time 2025-05-09 16:05:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 3 (Predictions Aligned): Anomaly - Process Score equals or greater than 0.8 or Alarm Triggered
+  - Network Anomaly Score: 0.010
+  - Unique Write Targets: 1
+  - Process Prediction: Class 1
+    Class Probabilities: Class 0: 0.1% | Class 1: 99.8% | Class 2: 0.0% | Class 3: 0.1% | Class 4: 0.0%
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 4
+  - Triggered Features: ['anomaly_ruleid_92052', 'anomaly_score']
+  - Explanation: cmd prompt started by suspicious process [T1059.003]
+------------------------------------------------------------
+
+Time 2025-05-09 16:07:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 3 (Predictions Aligned): Anomaly - Process Score equals or greater than 0.8 or Alarm Triggered
+  - Network Anomaly Score: 0.013
+  - Process Prediction: Class 1
+    Class Probabilities: Class 0: 0.0% | Class 1: 100.0% | Class 2: 0.0% | Class 3: 0.0% | Class 4: 0.0%
+------------------------------------------------------------
+
+Time 2025-05-09 16:10:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 1 (Only Network Data Available): Likely Anomaly
+  - Network Anomaly Score: -0.076
+  - OPC UA Message Sizes: 253, 100, 204, 189, 1584
+------------------------------------------------------------
+
+Time 2025-05-09 16:15:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 1 (Only Network Data Available): Likely Anomaly
+  - Network Anomaly Score: -0.044
+  - OPC UA Message Sizes: 189, 253, 100, 204, 1608
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 12
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_ruleid_92213', 'anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Binary in malware-prone directory [T1105]; Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 16:16:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 1 (Only Network Data Available): Likely Anomaly
+  - Network Anomaly Score: -0.075
+  - OPC UA Message Sizes: 253, 100, 204, 189, 1558
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 126
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_powershell_4104', 'anomaly_ruleid_91811', 'anomaly_ruleid_100206', 'anomaly_ruleid_92207', 'anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; Suspicious PowerShell script (4104); PowerShell Expand-Archive run [T1105]; Webrequest download cradle [T1059.001]; Binary dropped in Users\Public; Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 16:17:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 60
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67024', 'anomaly_ruleid_67028', 'anomaly_ruleid_92037', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_ruleid_92052', 'anomaly_ruleid_92218', 'anomaly_ruleid_92650', 'anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Service logon from non-standard account; Special privileges assigned to logon [T1484]; Remote net.exe run via wsmprovhost [T1567]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]; cmd prompt started by suspicious process [T1059.003]; Binary dropped in Windows root [T1570]; New suspicious Windows service [T1021.002]; Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 16:18:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 52
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67024', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_cmd_in_parent', 'anomaly_ruleid_92032', 'anomaly_ruleid_92052', 'anomaly_ruleid_92218', 'anomaly_ruleid_92650', 'anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Service logon from non-standard account; Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]; cmd.exe launched by unusual parent process; Suspicious Windows cmd shell exec [T1087/T1059.003]; cmd prompt started by suspicious process [T1059.003]; Binary dropped in Windows root [T1570]; New suspicious Windows service [T1021.002]; Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 16:19:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 30
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67024', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_ruleid_92052', 'anomaly_ruleid_92218', 'anomaly_ruleid_92650', 'anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Service logon from non-standard account; Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]; cmd prompt started by suspicious process [T1059.003]; Binary dropped in Windows root [T1570]; New suspicious Windows service [T1021.002]; Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 16:20:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 8
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+------------------------------------------------------------
+
+Time 2025-05-09 16:21:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 26
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]
+------------------------------------------------------------
+
+Time 2025-05-09 16:22:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 36
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67024', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_ruleid_92052', 'anomaly_ruleid_92218', 'anomaly_ruleid_92650', 'anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Service logon from non-standard account; Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]; cmd prompt started by suspicious process [T1059.003]; Binary dropped in Windows root [T1570]; New suspicious Windows service [T1021.002]; Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 16:23:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 36
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67024', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_ruleid_92052', 'anomaly_ruleid_92218', 'anomaly_ruleid_92650', 'anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Service logon from non-standard account; Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]; cmd prompt started by suspicious process [T1059.003]; Binary dropped in Windows root [T1570]; New suspicious Windows service [T1021.002]; Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 16:24:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 36
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67024', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_ruleid_92052', 'anomaly_ruleid_92218', 'anomaly_ruleid_92650', 'anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Service logon from non-standard account; Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]; cmd prompt started by suspicious process [T1059.003]; Binary dropped in Windows root [T1570]; New suspicious Windows service [T1021.002]; Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 16:25:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 8
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+------------------------------------------------------------
+
+Time 2025-05-09 16:26:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 34
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67024', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_ruleid_92068', 'anomaly_ruleid_92213', 'anomaly_ruleid_92218', 'anomaly_ruleid_92650', 'anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Service logon from non-standard account; Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]; PSEXEC PowerShell exec [T1569.002]; Binary in malware-prone directory [T1105]; Binary dropped in Windows root [T1570]; New suspicious Windows service [T1021.002]; Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 16:27:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 8
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+------------------------------------------------------------
+
+Time 2025-05-09 16:28:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 8
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+------------------------------------------------------------
+
+Time 2025-05-09 16:29:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 8
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+------------------------------------------------------------
+
+Time 2025-05-09 16:30:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 18
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]
+------------------------------------------------------------
+
+Time 2025-05-09 16:31:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 104
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]
+------------------------------------------------------------
+
+Time 2025-05-09 16:32:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 18
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92037', 'anomaly_ruleid_92652', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; Remote net.exe run via wsmprovhost [T1567]; NTLM pass-the-hash login [T1550.002]
+------------------------------------------------------------
+
+Time 2025-05-09 16:33:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 16
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+------------------------------------------------------------
+
+Time 2025-05-09 16:34:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 40
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67024', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_ruleid_92021', 'anomaly_ruleid_92213', 'anomaly_ruleid_92218', 'anomaly_ruleid_92650', 'anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Service logon from non-standard account; Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]; PowerShell deletes files [T1070.004]; Binary in malware-prone directory [T1105]; Binary dropped in Windows root [T1570]; New suspicious Windows service [T1021.002]; Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 16:35:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 40
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67024', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_ruleid_92021', 'anomaly_ruleid_92213', 'anomaly_ruleid_92218', 'anomaly_ruleid_92650', 'anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Service logon from non-standard account; Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]; PowerShell deletes files [T1070.004]; Binary in malware-prone directory [T1105]; Binary dropped in Windows root [T1570]; New suspicious Windows service [T1021.002]; Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 16:37:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 40
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67024', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_ruleid_92021', 'anomaly_ruleid_92213', 'anomaly_ruleid_92218', 'anomaly_ruleid_92650', 'anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Service logon from non-standard account; Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]; PowerShell deletes files [T1070.004]; Binary in malware-prone directory [T1105]; Binary dropped in Windows root [T1570]; New suspicious Windows service [T1021.002]; Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 16:38:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 40
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_epmap', 'anomaly_logonProcess', 'anomaly_ruleid_67024', 'anomaly_ruleid_67028', 'anomaly_ruleid_92105', 'anomaly_ruleid_92652', 'anomaly_ruleid_92657', 'anomaly_ruleid_92021', 'anomaly_ruleid_92213', 'anomaly_ruleid_92218', 'anomaly_ruleid_92650', 'anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious RPC (epmap) connection; Suspicious logon process (user32 or NtLmSsp); Service logon from non-standard account; Special privileges assigned to logon [T1484]; Suspicious access to admin shares [T1021.002]; NTLM pass-the-hash login [T1550.002]; NTLM or RDP remote logon [T1550.002 / T1078.002]; PowerShell deletes files [T1070.004]; Binary in malware-prone directory [T1105]; Binary dropped in Windows root [T1570]; New suspicious Windows service [T1021.002]; Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 16:39:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 8
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92652', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; NTLM pass-the-hash login [T1550.002]
+------------------------------------------------------------
+
+Time 2025-05-09 16:43:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 1 (Only Network Data Available): Likely Anomaly
+  - Network Anomaly Score: -0.069
+  - OPC UA Message Sizes: 253, 100, 204, 189, 1634
+------------------------------------------------------------
+
+Time 2025-05-09 16:49:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 20
+  - Triggered Features: ['anomaly_ntlm', 'anomaly_logonProcess', 'anomaly_ruleid_67022', 'anomaly_ruleid_67028', 'anomaly_ruleid_92657', 'anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: NTLM logon (potential relay attack); Suspicious logon process (user32 or NtLmSsp); Non-network/service logon detected; Special privileges assigned to logon [T1484]; NTLM or RDP remote logon [T1550.002 / T1078.002]; Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 16:50:00+01:00 (BST)
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 10
+  - Triggered Features: ['anomaly_logonProcess', 'anomaly_ruleid_67028', 'anomaly_ruleid_92653', 'anomaly_score']
+  - Explanation: Suspicious logon process (user32 or NtLmSsp); Special privileges assigned to logon [T1484]; RDP connection detected [T1021.001]
+------------------------------------------------------------
+
+Time 2025-05-09 16:51:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 1 (Only Network Data Available): Likely Anomaly
+  - Network Anomaly Score: -0.139
+  - OPC UA Message Sizes: 253, 100, 204, 189, 1685
+------------------------------------------------------------
+
+Time 2025-05-09 16:53:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 3 (Predictions Aligned): Anomaly - Process Score equals or greater than 0.8 or Alarm Triggered
+  - Network Anomaly Score: -0.139
+  - Unique Write Targets: 1
+  - Node IDs Written: -, MCDData.Conveyor2_Speed
+  - OPC UA Message Sizes: 253, 100, 204, 189, 2488
+  - Process Alarms: 1
+  - Process Prediction: Class 0
+    Class Probabilities: Class 0: 99.4% | Class 1: 0.0% | Class 2: 0.5% | Class 3: 0.1% | Class 4: 0.0%
+------------------------------------------------------------
+
+Time 2025-05-09 16:54:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 3 (Predictions Aligned): Anomaly - Process Score equals or greater than 0.8 or Alarm Triggered
+  - Network Anomaly Score: -0.139
+  - Unique Write Targets: 1
+  - Node IDs Written: -, MCDData.Conveyor3_Speed
+  - OPC UA Message Sizes: 253, 100, 204, 189, 422
+  - Process Alarms: 3
+  - Process Prediction: Class 0
+    Class Probabilities: Class 0: 100.0% | Class 1: 0.0% | Class 2: 0.0% | Class 3: 0.0% | Class 4: 0.0%
+------------------------------------------------------------
+
+Time 2025-05-09 16:55:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 3 (Predictions Aligned): Anomaly - Process Score equals or greater than 0.8 or Alarm Triggered
+  - Network Anomaly Score: -0.139
+  - Unique Write Targets: 1
+  - Node IDs Written: -, MCDData.Conveyor3_Speed
+  - OPC UA Message Sizes: 253, 100, 204, 189, 136
+  - Process Prediction: Class 0
+    Class Probabilities: Class 0: 100.0% | Class 1: 0.0% | Class 2: 0.0% | Class 3: 0.0% | Class 4: 0.0%
+------------------------------------------------------------
+
+Time 2025-05-09 16:57:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 3 (Predictions Aligned): Anomaly - Process Score equals or greater than 0.8 or Alarm Triggered
+  - Network Anomaly Score: -0.139
+  - Unique Write Targets: 1
+  - Node IDs Written: -, MCDData.Conveyor3_Speed
+  - OPC UA Message Sizes: 253, 100, 204, 189, 2391
+  - Process Alarms: 2
+  - Process Prediction: Class 0
+    Class Probabilities: Class 0: 94.8% | Class 1: 4.6% | Class 2: 0.1% | Class 3: 0.2% | Class 4: 0.2%
+------------------------------------------------------------
+
+Time 2025-05-09 16:58:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 3 (Predictions Aligned): Anomaly - Process Score equals or greater than 0.8 or Alarm Triggered
+  - Network Anomaly Score: -0.139
+  - Unique Write Targets: 2
+  - Node IDs Written: -, MCDData.GetBox_signal, MCDData.RotatePosition
+  - OPC UA Message Sizes: 253, 100, 204, 189, 159
+  - Process Prediction: Class 1
+    Class Probabilities: Class 0: 0.0% | Class 1: 99.8% | Class 2: 0.0% | Class 3: 0.0% | Class 4: 0.2%
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 2
+  - Triggered Features: ['anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 16:59:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 3 (Predictions Aligned): Anomaly - Process Score equals or greater than 0.8 or Alarm Triggered
+  - Network Anomaly Score: -0.139
+  - Unique Write Targets: 2
+  - Node IDs Written: -, MCDData.RotatePosition, MCDData.Gripper_Z_Speed
+  - OPC UA Message Sizes: 253, 100, 204, 189, 132
+  - Process Prediction: Class 1
+    Class Probabilities: Class 0: 0.0% | Class 1: 99.4% | Class 2: 0.0% | Class 3: 0.0% | Class 4: 0.6%
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 2
+  - Triggered Features: ['anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 17:00:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 3 (Predictions Aligned): Anomaly - Process Score equals or greater than 0.8 or Alarm Triggered
+  - Network Anomaly Score: -0.139
+  - Unique Write Targets: 1
+  - Node IDs Written: -, MCDData.RotatePosition
+  - OPC UA Message Sizes: 253, 100, 204, 189, 132
+  - Process Prediction: Class 4
+    Class Probabilities: Class 0: 0.0% | Class 1: 0.1% | Class 2: 0.0% | Class 3: 0.0% | Class 4: 99.8%
+→ [Host] Anomaly Detected
+  - Host Anomaly Score: 4
+  - Triggered Features: ['anomaly_medium_or_higher', 'anomaly_score']
+  - Explanation: Wazuh rule level 7 or above (medium/high severity)
+------------------------------------------------------------
+
+Time 2025-05-09 17:01:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 3 (Predictions Aligned): Anomaly - Process Score equals or greater than 0.8 or Alarm Triggered
+  - Network Anomaly Score: -0.117
+  - OPC UA Message Sizes: 85, 66, 253, 100, 204
+  - Process Prediction: Class 4
+    Class Probabilities: Class 0: 0.0% | Class 1: 8.5% | Class 2: 0.0% | Class 3: 0.1% | Class 4: 91.3%
+------------------------------------------------------------
+
+Time 2025-05-09 17:02:00+01:00 (BST)
+→ [OT Network and Process] Anomaly Detected
+  Reason: Case 1 (Only Network Data Available): Likely Anomaly
+  - Network Anomaly Score: -0.139
+  - OPC UA Message Sizes: 1787, 74, 1582, 96, 66
+------------------------------------------------------------
