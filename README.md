@@ -1,4 +1,4 @@
-# Multimodal Decision Fusion for Detection of Advanced Persistent Threats in Industrial Control Systems
+# LOTL-Hunter: Detecting Multi-Stage Living-off-the-Land Attacks in Cyber-Physical Systems using Decision Fusion Techniques with Digital Twins
 
 ---
 # Overview
