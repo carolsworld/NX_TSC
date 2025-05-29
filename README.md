@@ -1,5 +1,20 @@
 # LOTL-Hunter: Detecting Multi-Stage Living-off-the-Land Attacks in Cyber-Physical Systems using Decision Fusion Techniques with Digital Twins
 
+
+## Summary
+
+This simulation testbed integrates Siemens Digital Twin software (NX MCD, PLCSim Advanced) with open-source security tools (Zeek, Wazuh, etc.) to safely replicate multi-stage Living-off-the-Land (LOTL) attacks in a smart manufacturing environment.
+
+Key contributions:
+- **Addresses a research gap** in publicly available datasets and test environments for stealthy, multi-step APT simulations in Cyber-Physical Systems (CPS).
+- **Implements a 1-minute temporal alignment strategy** to enable correlation across OT process, OPC UA network, and host-based data.
+- **Proposes a two-level decision fusion approach** that integrates low-confidence signals from heterogeneous sources into an explainable and contextual anomaly detection strategy.
+- **Demonstrates measurable improvements in detection**, including higher F1-score through fusion vs. single-modality detection.
+- **Minimizes false positives** by aggregating and correlating alerts across IT/OT domains, supporting real-world ICS deployment needs.
+
+This repository provides a reproducible testbed, detection logic, and experimental results to support further research into multi-modal threat detection in industrial settings.
+
+
 ---
 # Overview
 
@@ -83,8 +98,8 @@ Two parallel datasets were created — one for time-series classification based 
 - Visual correlation with attack windows shows effective scoring and detection during simulated PowerShell-based LOTL attacks.
 
 ## LLM Support for Analysis (Experimental)
-- To support human-in-the-loop industrial analysis, we also experimented with using **Large Language Models (LLMs)** (e.g., Gemini) to summarise 1-minute fused anomaly logs.
-- The following screenshots illustrate how Gemini LLM interpreted the fused anomaly logs collected during the attack simulation. 
+- To support human-in-the-loop analysis in industrial settings, we explored the use of **Large Language Models (LLMs)** , Gemini 2.5, to automatically summarise minute-by-minute fused anomaly logs.
+- Below are examples of Gemini's output, offering natural language descriptions of anomalous host and OT behaviour:
 
 ![Gemini Summary 1](gemini_1.png)
 ![Gemini Summary 2](gemini_2.png)
@@ -94,4 +109,3 @@ Two parallel datasets were created — one for time-series classification based 
 
 - These summaries provide human-readable insight into the types of anomalies detected across host and OT domains.
 ---
-
