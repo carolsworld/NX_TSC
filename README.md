@@ -82,18 +82,16 @@ Two parallel datasets were created — one for time-series classification based 
 - Anomaly scores are aggregated per minute, and enriched with explanation text.
 - Visual correlation with attack windows shows effective scoring and detection during simulated PowerShell-based LOTL attacks.
 
-## Visualisation
-- Grafana dashboards is to be used for visualization of fused results across modalities
+## LLM Support for Analysis (Experimental)
+- To support human-in-the-loop industrial analysis, we also experimented with using **Large Language Models (LLMs)** (e.g., Gemini) to summarise 1-minute fused anomaly logs.
+- The following screenshots illustrate how Gemini LLM interpreted the fused anomaly logs collected during the attack simulation. 
 
-## LLM Support for Analysis
-- Gemini 2.0 (LLM) is used to support natural language interpretation of fused anomaly explanations.
+![Gemini Summary 1](gemini_1.png)
+![Gemini Summary 2](gemini_2.png)
+![Gemini Summary 3](gemini_3.png)
+![Gemini Summary 4](gemini_4.png)
+![Gemini Summary 5](gemini_5.png)
+
+- These summaries provide human-readable insight into the types of anomalies detected across host and OT domains.
 ---
 
-## Key Findings
-
-- Fusion of OT process + network achieves **higher F1-score** and better generalization than either modality alone.
-- Host-based anomaly scoring using Wazuh rules effectively highlights LOTL-related behavior.
-- Attack windows are clearly identifiable through score peaks aligned with the simulated APT timeline.
-
-
----
