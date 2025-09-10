@@ -44,10 +44,7 @@ During multi-stage simulation, network traffic was captured continuously in a **
 2. **`extractlogtoCSV_enriched_inference.py`**  
    Converts the opcua.log file into a structured CSV file. Information from opcua_binary.log are perserved, with added "node_id_string" from opcua_binary_write.log.
 
-3. **`timestamp_toLocalTime.py`**  
-   Converts Zeek timestamps from UTC to UK local time, aligning network events with process logs and attack chain timelines.
-
-4. **`extract_opcua_features_enriched_inference.py`**  
+3. **`extract_opcua_features_enriched_inference.py`**  
    Performs feature extraction on the full network log, including identifying write requests and their message sizes and flagging anomalous message sizes or patterns. 
 
    Extracts semantic features including:
@@ -58,4 +55,5 @@ During multi-stage simulation, network traffic was captured continuously in a **
 
 • write_msg_anomaly – whether the write message has an unexpected size
 
-
+4. **`extract_1minute_inference.py`**  
+   Converts Zeek timestamps from UTC to UK local time, rounding up to minutes, assign instance number per minute, splitting the files into two csv files for import to Google Colab.
