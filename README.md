@@ -1,111 +1,43 @@
-# LOTL-Hunter: Detecting Multi-Stage Living-off-the-Land Attacks in Cyber-Physical Systems using Decision Fusion Techniques with Digital Twins
+# LOTL-Hunter: Detecting Multi-Stage Living-off-the-Land (LOTL) Attacks in Cyber-Physical Systems using Decision Fusion Techniques with Digital Twins
 
 
-## Summary
-
-This simulation testbed integrates Siemens Digital Twin software (NX MCD, PLCSim Advanced) with open-source security tools (Zeek, Wazuh, etc.) to safely replicate multi-stage Living-off-the-Land (LOTL) attacks in a smart manufacturing environment.
-
-Key contributions:
-- **Addresses a research gap** in publicly available datasets and test environments for stealthy, multi-step APT simulations in Cyber-Physical Systems (CPS).
-- **Implements a 1-minute temporal alignment strategy** to enable correlation across OT process, OPC UA network, and host-based data.
-- **Proposes a two-level decision fusion approach** that integrates low-confidence signals from heterogeneous sources into an explainable and contextual anomaly detection strategy.
-- **Demonstrates measurable improvements in detection**, including higher F1-score through fusion vs. single-modality detection.
-- **Minimizes false positives** by aggregating and correlating alerts across IT/OT domains, supporting real-world ICS deployment needs.
-
-This repository provides a reproducible testbed, detection logic, and experimental results to support further research into multi-modal threat detection in industrial settings.
+## Overview
+This repository contains dataset and code supporting our study on **two-level decision fusion** for detecting stealthy, multi-stage Living-off-the-Land (LOTL) attacks in Cyber-Physical Systems (CPS) and Industrial Control Systems (ICS).
 
 
----
-# Overview
+### Key Highlights
+- **Digital Twin Testbed**: Safe, repeatable simulation of multi-stage attacks using Siemens NX MCD + PLCSim Advanced with OPC UA and open-source security tools.
+- **Two-Level Fusion Strategy**:
+  - **First-level fusion (OT layer)** combines process anomalies (LSTM-FCN), OPC UA network anomalies (Isolation Forest), and process alarms.
+  - **Second-level fusion (IT/OT correlation)** integrates OT results with host anomalies from Wazuh logs.
+- **Improved Detection**: Early detection and improved performance against stealthy multi-stage APT behaviours.
+- **LLM Support (Experimental)**: Natural-language summarisation of fused anomaly logs to aid interpretability.
 
-This repository explores whether combining network, host and process indicators enhances detection of stealthy multi-step APT behaviors (especially Living off the Land techniques) in Cyber-Physical Systems and related Industrial Control Systems. 
 
-The first goal of this simulation setup for OT process was to:
-- **Detect physical process anomalies** using LSTM-FCN classifiers on time series data.
-- **Identify write behaviors to PLCs** using anomaly scores from Isolation Forest.
-- Ultimately, evaluate whether **fusing both sources of detection** improves detection performance — especially for **unseen, stealthy multi-vector attacks**.
 
-The second goal of the simulation setup for IT process was to: 
-- **Detect host-level anomalies** based on Wazuh SIEM logs from a Windows 11 VM under PowerShell-based attack simulation.
-- **Score host behaviours per minute** using binary rule-based features derived from MITRE ATT&CK-relevant detections.
-- Correlate host anomaly scores with OT behavior to support fusion-based decision making.
+## Dataset & Code
+- **Process data**: Time-series actuator/sensor values exported from Siemens NX MCD.  
+- **Network data**: OPC UA traffic captured with Wireshark and parsed with Zeek.  
+- **Host logs**: Windows 11 Wazuh alerts and Sysmon logs under LOTL simulations.  
+- **Code**: Includes preprocessing scripts, ML models (LSTM-FCN, Isolation Forest), fusion logic, and notebooks for reproducing results.  
 
-Ultimately, the project leverages data fusion between **OT process data**, **OT network traffic**, and **IT host event log within the OT environment** to improve detection accuracy and generalization, aiming to detect multi-step stealthy Living off the land (LOTL) technqiues.
 
----
 
-# Project Overview
+## Usage
+Notebooks are provided for running training, inference, and fusion experiments using the data provided in the data folder.  
 
-The goal is to evaluate whether **multi-modal data fusion** of host, network, and process data can enhance detection of stealthy APTs targeting smart manufacturing environments. This includes:
+Pleaes refer to the manuscript for detailed methodology and evaluation.
 
-- Process-level anomaly detection (e.g. abnormal conveyor/gripper behavior)
-- OPC UA network anomaly detection (e.g. unauthorized write commands)
-- Host-based behavior analysis (e.g. PowerShell, living-off-the-land tools)
+## LLM Support for Analysis (Experimental) 
 
----
+To support **human-in-the-loop analysis** in industrial settings, we explored the use of a Large Language Model (Gemini 2.5) to automatically summarise fused anomaly logs at the one-minute level.  
 
-# Core Components of Digital Twin Simulation
+Below are sample outputs from Gemini, showing natural-language descriptions of anomalous host and OT behaviour during LOTL simulations:
 
-| Modality   | Source                    | Detection Method                     | Nature | 
-|------------|---------------------------|--------------------------------------|--------|
-| Process    | Siemens NX MCD            | LSTM-FCN (Time Series Classifier)    |    OT  |
-| Network    | Wireshark + Zeek (OPC UA) | Isolation Forest (Unsupervised)      |    OT  |
-| Host Logs  | Windows 11 (Wazuh,sysmon) | Binary Rule-based Feature Scoring    |    IT  |
+![Gemini Summary 1](gemini_1.png)  
+![Gemini Summary 2](gemini_2.png)  
+![Gemini Summary 3](gemini_3.png)  
+![Gemini Summary 4](gemini_4.png)  
+![Gemini Summary 5](gemini_5.png)  
 
----
-
-## OT Side
-
-Both **OT process data** and **OT network traffic** were generated from Siemens NX Mechatronics Concept Designer (MCD) and Siemens PLCSimAdvanced for OT process simulation. 
-
-Two parallel datasets were created — one for time-series classification based on multivariate process variables, and one for anomaly detection based on OPC UA network packet features.
-
-### OT Process for Time Series Classification (Supervised - Deep Learning)
-- The goal was to develop **a supervised LSTM-FCN classifier from sktime deep learning module** for detecting physical process anomalies and recognise the anomalies into multi-class.
-- The multi-class include **5 scenarios**:
-  - 1 normal scenario - representating an automated process with no manual intervention (Instance 1 to 10, with Label 0)
-  - 4 threat scenarios with manual intervention via OPC UA clients (e.g. web-based HMI, UA Expert) to simulate stealthy APT behaviours:
-    - Single-vector attacks focusing on conveyor Speed Manipulation (Instance 11 to 20, with Label 1)
-    - Single-vector attacks focusing on gripper Suction Force Release (Instance 21 to 30, with Label 2)
-    - Single-vector attacks focusing on gripper Z-Axis Direction Manipulation (Instance 31 to 40, with Label 3)
-    - Single-vector attacks focusing on rotation Deviation (Instance 41 to 50, with Label 4)
-    - Multi-vector attacks within the same time window (Instance 51 to 60, with Label 5)
-- Each scenario was executed **10 times**, producing **50 instances** total as shown above.
-- During the simulation runs, data is collected at a sampling rate of 0.03s intervals using NX MCD's export function.
-- The dataset with 60 instances are preprocessed to ensure it only contains 1-minute simulation (**2000 timepoints per instance**) in order to fit the model training requirement.
-- The data size is `2000 timepoints × 60 instances = 120,000 rows`
-- Instance 1 to 50 (single-vector attacks) are **seen** datasets used for training and testing with 70:30 split, i.e. 35 instances for training, 15 instances for testing.
-- Instance 51 to 60 (multi-vector attacks) are **unseen** datasets during training and testing, they are used for evaluation.  
-
-### OT Network Traffic for Anomaly Detection (Unsupervised - Machine Learning)
-- The goal was to develop **an unsupervised anomaly detection using Isolation Forest from sckit-learn** for detecting network anomalies, especially `write` requests.
-- To complement the process view, network traffic between the OPC UA Server (PLC) and Client (HMI or UA Expert) was captured during the same NX MCD simulation runs.
-- Network packets captured with Wireshark, parsed using Zeek (with the [OPCUA binary protocol analyzer plugin](https://github.com/cisagov/icsnpp-opcua-binary)) was used to extract all OPC UA and connection logs.
-- The dataset with 60 instances are preprocessed to ensure it only contains 1-minute simulation (regardless number of network packets).
-- Only the `opcua_binary.log` files containing the metadata (e.g., write counts, message sizes, source ports) are used to curate dataset.
-- Key features extracted for anomaly scoring include write operation counts, message sizes, source ports, and packet totals from OPC UA logs generated from Zeek.
-- The model was trained using sckit-learn IsolationForest algorithm with various contamination parameters. The parameter value of 0.25 is used as it yeilds the best result. 
-- Instance 1 to 10 are **seen** training datasets used for baseline the normal network traffic, i.e. legitimate automation (**normal** cases, with Label 0). 
-- Instance 11 to 60 are **unseen** testing datasets during evaluation, i.e. potential malicious write request from OPU UA Client (**anomalous** cases, with Label 1).
-- The model produces anomaly scores for all 60 instances for evaluating the fusion strategy.
-
-## IT Side
-
-### IT Host Logs
-- Logs collected from Windows 11 with Wazuh and Sysmon, including PowerShell, command line, and event-based indicators.
-- Binary rule-based scoring assigns 1 point to key anomaly features per minute (e.g., suspicious logon, high-severity rule matches).
-- Anomaly scores are aggregated per minute, and enriched with explanation text.
-- Visual correlation with attack windows shows effective scoring and detection during simulated PowerShell-based LOTL attacks.
-
-## LLM Support for Analysis (Experimental)
-- To support human-in-the-loop analysis in industrial settings, we explored the use of **Large Language Models (LLMs)** , Gemini 2.5, to automatically summarise minute-by-minute fused anomaly logs.
-- Below are examples of Gemini's output, offering natural language descriptions of anomalous host and OT behaviour:
-
-![Gemini Summary 1](gemini_1.png)
-![Gemini Summary 2](gemini_2.png)
-![Gemini Summary 3](gemini_3.png)
-![Gemini Summary 4](gemini_4.png)
-![Gemini Summary 5](gemini_5.png)
-
-- These summaries provide human-readable insight into the types of anomalies detected across host and OT domains.
----
+These examples illustrate how LLMs can provide interpretable, human-readable explanations of fused anomaly events across IT and OT domains for continuous monitioring and situational awareness.
