@@ -1,19 +1,18 @@
 # LOTL-Hunter: Detecting Multi-Stage Living-off-the-Land (LOTL) Attacks in Cyber-Physical Systems using Decision Fusion Techniques with Digital Twins
 
+## Research Paper
+https://doi.org/10.1016/j.future.2026.108382
 
 ## Overview
 This repository contains dataset and code supporting our study on **two-level decision fusion** for detecting stealthy, multi-stage Living-off-the-Land (LOTL) attacks in Cyber-Physical Systems (CPS) and Industrial Control Systems (ICS).
 
-
-### Key Highlights
+## Key Highlights
 - **Digital Twin Testbed**: Safe, repeatable simulation of multi-stage attacks using Siemens NX MCD + PLCSim Advanced with OPC UA and open-source security tools.
 - **Two-Level Fusion Strategy**:
   - **First-level fusion (OT layer)** combines process anomalies (LSTM-FCN), OPC UA network anomalies (Isolation Forest), and process alarms.
   - **Second-level fusion (IT/OT correlation)** integrates OT results with host anomalies from Wazuh logs.
 - **Improved Detection**: Early detection and improved performance against stealthy multi-stage APT behaviours.
 - **LLM Support (Experimental)**: Natural-language summarisation of fused anomaly logs to aid interpretability.
-
-
 
 ## Dataset & Code
 - **Process data**: Time-series actuator/sensor values exported from Siemens NX MCD.  
